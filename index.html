@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The OBHS Spring Gala: a student showcase of Art, Design and Technology at Old Bridge High School.">
+<meta property="og:title" content="OBHS Spring Gala">
+<meta property="og:description" content="A Showcase of Art, Design & Technology at Old Bridge High School.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%230E0D12'/%3E%3Ccircle cx='20' cy='20' r='15' fill='none' stroke='%23D4B26A' stroke-width='2'/%3E%3Crect x='8' y='18' width='24' height='4' fill='%23D6403A' transform='rotate(-32 20 20)'/%3E%3C/svg%3E">
+<style>html{-webkit-text-size-adjust:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>OBHS Spring Gala</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a formal evening program — black-tie ground, brass hairlines, the round-room runway as the recurring mark; the illustrated site plan is the centerpiece. */
+:root{
+  --night:#0E0D12; --night-2:#16141C; --night-3:#1E1B26; --rule:#34303D;
+  --paper:#EFE9DD; --mute:#ABA393; --brass:#D4B26A; --brass-dim:#8F7A4C;
+  --runway:#D6403A; --garden:#7E9E77; --lamp:#F3C977; --siren-b:#6FA2E8;
+  --display:'Bodoni Moda',Didot,'Bodoni 72',Georgia,serif;
+  --body:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--night);color:var(--paper);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--night)}
+a{color:var(--brass);text-underline-offset:3px}
+a:hover{color:var(--paper)}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+h2{font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.01em}
+h3{font-size:24px;line-height:1.2}
+p{margin:0;text-wrap:pretty}
+.lede{font-size:clamp(18px,2vw,21px);line-height:1.55;max-width:62ch;color:var(--paper)}
+.mute{color:var(--mute)}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--night) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap;padding-block:8px}
+.mark{font-family:var(--display);font-size:20px;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark svg{width:26px;height:26px}
+.nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;flex-wrap:wrap}
+.nav ul a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);text-decoration:none;padding-block:10px;display:inline-block}
+.nav ul a:hover{color:var(--paper)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;padding-block:72px 64px}
+.hero h1{font-size:clamp(56px,9vw,124px);line-height:.92;letter-spacing:-.025em;margin-top:18px}
+.hero h1 em{font-style:italic;color:var(--brass)}
+.hero .sub{font-family:var(--display);font-style:italic;font-size:clamp(22px,2.6vw,30px);margin-top:18px;color:var(--paper)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:40px;border-top:1px solid var(--rule)}
+.facts div{padding:16px 16px 0 0;display:flex;flex-direction:column;gap:4px}
+.facts div+div{padding-left:16px;border-left:1px solid var(--rule)}
+.facts dt{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.facts dd{margin:0;font-size:16px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border:1px solid var(--brass);color:var(--night);background:var(--brass);text-decoration:none;font-weight:600;font-size:15px;border-radius:999px}
+.btn:hover{background:var(--paper);border-color:var(--paper);color:var(--night)}
+.btn.ghost{background:transparent;color:var(--brass)}
+.btn.ghost:hover{color:var(--night)}
+.hero-art{position:relative;max-width:100%}
+.hero-art svg{width:100%;height:auto;display:block}
+.sweep{transform-origin:250px 250px;animation:sweep 9s ease-in-out infinite alternate}
+@keyframes sweep{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
+
+section{padding-block:96px}
+.band{background:var(--night-2);border-block:1px solid var(--rule)}
+.head{display:flex;flex-direction:column;gap:16px;margin-bottom:48px}
+
+/* overview */
+.overview .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.overview .body{display:flex;flex-direction:column;gap:20px;color:var(--mute);font-size:17px}
+.overview .body strong{color:var(--paper);font-weight:500}
+.quote{font-family:var(--display);font-size:clamp(26px,3vw,36px);line-height:1.25;border-top:1px solid var(--brass-dim);padding-top:24px}
+.quote em{color:var(--brass)}
+
+/* runway feature */
+.runway .grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.runway ul{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.runway li{padding:16px 0;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:2px}
+.runway li:nth-child(odd){padding-right:18px}
+.runway li:nth-child(even){padding-left:18px;border-left:1px solid var(--rule)}
+.runway li b{font-weight:500}
+.runway li span{color:var(--mute);font-size:14px}
+.runway-art svg{width:100%;height:auto;display:block}
+
+/* flow */
+.flow ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:f}
+.flow li{counter-increment:f;padding:28px 24px 8px 0;border-top:1px solid var(--brass-dim);display:flex;flex-direction:column;gap:10px;position:relative}
+.flow li+li{padding-left:24px}
+.flow li::before{content:counter(f,decimal-leading-zero);font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--brass)}
+.flow li .when{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.flow li p{color:var(--mute);font-size:15px}
+.note{margin-top:28px;font-size:14px;color:var(--mute)}
+
+/* experiences */
+.xp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.xp>div{padding:26px 22px 10px 0;display:flex;flex-direction:column;gap:14px}
+.xp>div+div{padding-left:22px;border-left:1px solid var(--rule)}
+.xp ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.xp li{padding:9px 0;border-bottom:1px dotted var(--rule);font-size:15px}
+.xp li:last-child{border-bottom:0}
+.xp .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-left:6px}
+
+/* map */
+.map-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
+.map-frame{border:1px solid var(--rule);background:var(--night-2);border-radius:4px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.map-frame svg{display:block;width:100%;min-width:760px;height:auto}
+.hint{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-top:12px}
+.panel{position:sticky;top:calc(env(safe-area-inset-top,0px) + 84px);border:1px solid var(--rule);background:var(--night-3);padding:24px;display:flex;flex-direction:column;gap:12px;border-radius:4px;min-width:0}
+.panel .where{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.panel p{color:var(--mute);font-size:15px}
+.legend{margin-top:36px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+.legend h3{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:8px}
+.legend ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px}
+.legend button{all:unset;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:40px;font-size:15px;width:100%;border-bottom:1px dotted var(--rule)}
+.legend button:hover,.legend button[aria-pressed="true"]{color:var(--brass)}
+.legend button:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.sw{width:10px;height:10px;border-radius:50%;flex:none;background:var(--brass)}
+.sw.g{background:var(--garden)}.sw.r{background:var(--runway)}.sw.l{background:var(--lamp)}.sw.b{background:var(--siren-b)}
+
+/* svg map styling */
+.m-ground{fill:var(--night-2)}
+.m-road{fill:none;stroke:var(--brass-dim);stroke-width:2.2;stroke-linecap:round;opacity:.75}
+.m-road.dash{stroke-dasharray:2 7;stroke-width:1.6}
+.m-lot{fill:none;stroke:var(--rule);stroke-width:1.4;stroke-dasharray:4 5}
+.m-wall{fill:var(--night-3);stroke:var(--paper);stroke-width:1.6;stroke-linejoin:round}
+.m-wall.thin{stroke-width:1;stroke:#6B6575;fill:none}
+.m-court{fill:var(--garden);opacity:.32}
+.m-path{fill:none;stroke:var(--garden);stroke-width:1;stroke-dasharray:1 4;opacity:.8}
+.m-hall{fill:#1A1822}
+.m-label{font-family:var(--mono);font-size:8.6px;letter-spacing:.12em;fill:var(--paper);text-transform:uppercase;pointer-events:none}
+.m-label.sm{font-size:7.4px;fill:var(--mute)}
+.m-label.big{font-family:var(--display);font-size:15px;letter-spacing:0;text-transform:none;font-style:italic;fill:var(--brass)}
+.m-arrow{fill:none;stroke:var(--brass);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.car{fill:#2B2833;stroke:var(--paper);stroke-width:.8}
+.car.tesla{fill:var(--paper);stroke:var(--brass)}
+.glass{fill:var(--brass-dim);opacity:.8}
+.truck{fill:#2B2833;stroke:var(--brass);stroke-width:1}
+.ladder{fill:var(--runway);stroke:#F2B3A8;stroke-width:.8}
+.rungs{stroke:#F7D9D3;stroke-width:.9;fill:none}
+.police{fill:#22202A;stroke:var(--paper);stroke-width:.8}
+.bluelight{fill:var(--siren-b)}.redlight{fill:var(--runway)}
+.lantern{fill:var(--lamp);filter:url(#glow)}
+.crate{fill:#6E5A3C;stroke:#A88D61;stroke-width:.6}
+.seat{fill:var(--mute)}
+.runway-bar{fill:var(--runway)}
+.beam{fill:url(#beam);opacity:.55}
+.dj{fill:var(--paper)}
+.zone{cursor:pointer;outline:none}
+.zone .hit{fill:var(--brass);opacity:0;transition:opacity .2s}
+.zone:hover .hit,.zone:focus-visible .hit{opacity:.14}
+.zone.on .hit{opacity:.24}
+.zone.on .m-label:not(.sm){fill:var(--brass)}
+.zone:focus-visible .hit{stroke:var(--brass);stroke-width:1.5;opacity:.2}
+
+/* involved */
+.inv{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}
+.offer{border:1px solid var(--brass-dim);padding:28px;border-radius:4px;display:flex;flex-direction:column;gap:12px;margin-bottom:40px;background:linear-gradient(var(--night-3),var(--night-3))}
+.offer p{color:var(--mute)}
+.qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.qs h4{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin:0 0 10px}
+.qs ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;color:var(--mute);font-size:14.5px}
+.qs ol li::marker{font-family:var(--mono);color:var(--paper);font-size:12px}
+.side{display:flex;flex-direction:column;gap:28px}
+.card{border-top:1px solid var(--rule);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.card p{color:var(--mute);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--rule);padding:6px 10px;border-radius:999px;color:var(--paper)}
+
+/* open questions */
+.open{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.open>div{padding:24px 24px 24px 0;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:8px}
+.open>div:not(:nth-child(3n+1)){padding-left:24px;border-left:1px solid var(--rule)}
+.open p{color:var(--mute);font-size:15px}
+.open b{font-weight:500}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end}
+.contact h2 em{color:var(--brass)}
+.who{display:flex;flex-direction:column;gap:6px;border-left:1px solid var(--brass-dim);padding-left:24px}
+.who .name{font-family:var(--display);font-size:30px}
+footer{border-top:1px solid var(--rule)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+
+@media (max-width:980px){
+  .hero .wrap,.overview .grid,.runway .grid,.inv,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-art{max-width:440px}
+  .flow ol,.xp{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow li:nth-child(3),.xp>div:nth-child(3){padding-left:0;border-left:0}
+  .map-shell{grid-template-columns:minmax(0,1fr)}
+  .panel{position:static}
+  .qs,.open{grid-template-columns:minmax(0,1fr)}
+  .open>div:not(:nth-child(3n+1)){padding-left:0;border-left:0}
+}
+@media (max-width:640px){
+  section{padding-block:68px}
+  .nav ul{gap:14px}
+  .facts{grid-template-columns:minmax(0,1fr)}
+  .facts div+div{padding-left:0;border-left:0}
+  .flow ol,.xp,.runway ul,.legend,.legend ul{grid-template-columns:minmax(0,1fr)}
+  .flow li+li,.xp>div+div{padding-left:0;border-left:0}
+  .runway li:nth-child(even){padding-left:0;border-left:0}
+}
+</style>
+
+</head>
+<body>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="OBHS Spring Gala, back to top">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="#D4B26A" stroke-width="1.6"/><rect x="8" y="18" width="24" height="4" fill="#D6403A" transform="rotate(-32 20 20)"/></svg>
+      OBHS Gala
+    </a>
+    <ul>
+      <li><a href="#evening">The evening</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><a href="#involved">Get involved</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Old Bridge High School &nbsp;·&nbsp; Spring 2027</div>
+      <h1>The Spring <em>Gala</em></h1>
+      <p class="sub">A Showcase of Art, Design &amp; Technology</p>
+      <dl class="facts">
+        <div><dt>When</dt><dd>April or May, at dusk</dd></div>
+        <div><dt>Where</dt><dd>OBHS, indoors and out</dd></div>
+        <div><dt>Attire</dt><dd>Formal</dd></div>
+      </dl>
+      <div class="ctas">
+        <a class="btn" href="#map">Explore the map</a>
+        <a class="btn ghost" href="#involved">Get involved</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 500 530">
+        <defs>
+          <radialGradient id="hg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#D4B26A" stop-opacity=".22"/><stop offset="1" stop-color="#D4B26A" stop-opacity="0"/></radialGradient>
+          <linearGradient id="hbeam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3C977" stop-opacity=".0"/><stop offset="1" stop-color="#F3C977" stop-opacity=".35"/></linearGradient>
+        </defs>
+        <circle cx="250" cy="250" r="240" fill="url(#hg)"/>
+        <circle cx="250" cy="250" r="214" fill="none" stroke="#EFE9DD" stroke-width="1.6"/>
+        <circle cx="250" cy="250" r="204" fill="none" stroke="#EFE9DD" stroke-width=".6" opacity=".5"/>
+        <g class="sweep"><path d="M250 250 L150 20 L350 20 Z" fill="url(#hbeam)" opacity=".5"/></g>
+        <g transform="rotate(-32 250 250)">
+          <g fill="#ABA393">
+            <circle cx="110" cy="222" r="2.6"/><circle cx="130" cy="222" r="2.6"/><circle cx="150" cy="222" r="2.6"/><circle cx="170" cy="222" r="2.6"/><circle cx="190" cy="222" r="2.6"/><circle cx="210" cy="222" r="2.6"/><circle cx="230" cy="222" r="2.6"/><circle cx="250" cy="222" r="2.6"/><circle cx="270" cy="222" r="2.6"/><circle cx="290" cy="222" r="2.6"/><circle cx="310" cy="222" r="2.6"/><circle cx="330" cy="222" r="2.6"/><circle cx="350" cy="222" r="2.6"/><circle cx="370" cy="222" r="2.6"/><circle cx="390" cy="222" r="2.6"/>
+            <circle cx="110" cy="278" r="2.6"/><circle cx="130" cy="278" r="2.6"/><circle cx="150" cy="278" r="2.6"/><circle cx="170" cy="278" r="2.6"/><circle cx="190" cy="278" r="2.6"/><circle cx="210" cy="278" r="2.6"/><circle cx="230" cy="278" r="2.6"/><circle cx="250" cy="278" r="2.6"/><circle cx="270" cy="278" r="2.6"/><circle cx="290" cy="278" r="2.6"/><circle cx="310" cy="278" r="2.6"/><circle cx="330" cy="278" r="2.6"/><circle cx="350" cy="278" r="2.6"/><circle cx="370" cy="278" r="2.6"/><circle cx="390" cy="278" r="2.6"/>
+          </g>
+          <rect x="96" y="238" width="308" height="24" fill="#D6403A"/>
+          <rect x="96" y="238" width="308" height="24" fill="none" stroke="#F2B3A8" stroke-width=".8"/>
+        </g>
+        <rect x="372" y="340" width="20" height="54" fill="#EFE9DD" transform="rotate(32 382 367)"/>
+        <text x="250" y="518" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="4" fill="#ABA393">PROJECT RUNWAY</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section class="overview band" id="about">
+  <div class="wrap grid">
+    <div class="head" style="margin:0">
+      <div class="eyebrow">Overview</div>
+      <h2>A premier showcase of student talent</h2>
+      <p class="quote">One night that celebrates the creativity, innovation and achievement of students across <em>every discipline</em> at OBHS.</p>
+    </div>
+    <div class="body">
+      <p>The evening brings together as many departments as possible for a collaborative celebration of <strong>Art, Design and Technology</strong>. It connects our school community with local artists, businesses and industry professionals.</p>
+      <p>The centerpiece is a <strong>Fashion &amp; Design “Project Runway” experience</strong>: student-designed apparel, professional staging, DJ entertainment and dynamic lighting production.</p>
+      <p>After the runway, students from classes across the school present the projects they developed this year and share the ideas and stories behind their work.</p>
+      <p>Brought to you by <strong style="font-weight:600">Career and Technical Education at OBHS</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="runway" id="runway">
+  <div class="wrap grid">
+    <div class="runway-art" aria-hidden="true">
+      <svg viewBox="0 0 520 360">
+        <rect x="0" y="0" width="520" height="360" fill="#16141C"/>
+        <g opacity=".9">
+          <path d="M60 330 L230 120 L250 120 L90 330 Z" fill="#F3C977" opacity=".08"/>
+          <path d="M460 330 L290 120 L270 120 L430 330 Z" fill="#F3C977" opacity=".08"/>
+        </g>
+        <path d="M150 330 L240 90 L280 90 L370 330 Z" fill="#D6403A"/>
+        <path d="M150 330 L240 90 L280 90 L370 330" fill="none" stroke="#F2B3A8" stroke-width="1"/>
+        <g stroke="#EFE9DD" stroke-width=".8" opacity=".4"><path d="M190 230 H330"/><path d="M175 270 H345"/><path d="M215 165 H305"/></g>
+        <g fill="#ABA393">
+          <circle cx="120" cy="300" r="5"/><circle cx="135" cy="262" r="4.5"/><circle cx="150" cy="226" r="4"/><circle cx="164" cy="192" r="3.6"/><circle cx="178" cy="160" r="3.2"/><circle cx="191" cy="132" r="2.8"/>
+          <circle cx="400" cy="300" r="5"/><circle cx="385" cy="262" r="4.5"/><circle cx="370" cy="226" r="4"/><circle cx="356" cy="192" r="3.6"/><circle cx="342" cy="160" r="3.2"/><circle cx="329" cy="132" r="2.8"/>
+        </g>
+        <g fill="#EFE9DD"><ellipse cx="260" cy="168" rx="7" ry="3"/><path d="M255 166 Q260 128 265 166 Z"/><circle cx="260" cy="124" r="5"/></g>
+        <rect x="200" y="40" width="120" height="30" fill="none" stroke="#D4B26A" stroke-width="1"/>
+        <text x="260" y="60" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="3" fill="#D4B26A">DJ · LIGHTS</text>
+      </svg>
+    </div>
+    <div>
+      <div class="eyebrow">The centerpiece</div>
+      <h2 style="margin-top:14px">Project Runway</h2>
+      <p class="lede mute" style="margin-top:18px;color:var(--mute)">A diagonal runway through the round room, built and styled by students, with the audience on both sides.</p>
+      <ul>
+        <li><b>Student-designed apparel</b><span>Fashion Design collections, including upcycled looks</span></li>
+        <li><b>Professional staging</b><span>Runway, seating and the room itself as the set</span></li>
+        <li><b>DJ entertainment</b><span>A live set paced to each walk</span></li>
+        <li><b>Dynamic lighting</b><span>Light curation, then projection mapping after dark</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="flow band" id="evening">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">The evening</div>
+      <h2>From golden hour into the night</h2>
+      <p class="lede mute" style="color:var(--mute)">The night is planned around dusk, roughly 6:00 to 8:00 or 9:00 pm, so the outdoor exhibits open in daylight and the light shows land after dark.</p>
+    </div>
+    <ol>
+      <li><span class="when">Arrival · Dusk</span><h3>On the lot</h3><p>Collectors and student car shows, OBPD and OBFD vehicles, and food trucks greet guests as they arrive.</p></li>
+      <li><span class="when">Gallery walk</span><h3>Through the halls</h3><p>The art show, photography, architecture, short films, ceramics and the Creative Design studio, with students beside their work.</p></li>
+      <li><span class="when">Centerpiece</span><h3>The runway</h3><p>Project Runway in the round room, with DJ and lighting production.</p></li>
+      <li><span class="when">After dark</span><h3>Lights</h3><p>A projection-mapped light show and a Tesla synchronized light show close the night.</p></li>
+    </ol>
+    <p class="note">This order is a working plan. Times will be set once the date is confirmed, and a rain date will be announced with it.</p>
+  </div>
+</section>
+
+<section id="experiences">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Curated experiences, so far</div>
+      <h2>Something from every corner of the school</h2>
+    </div>
+    <div class="xp">
+      <div><h3>Gallery &amp; studio</h3><ul><li>Formal art show</li><li>Photography exhibits</li><li>Architecture exhibit</li><li>Short film exhibit</li><li>Art for sale</li><li>Merch for sale</li></ul></div>
+      <div><h3>Runway &amp; stage</h3><ul><li>Fashion runway</li><li>DJ and light curation</li><li>Live jazz</li><li>Projection mapping<span class="tag">Proposed</span></li></ul></div>
+      <div><h3>Outdoors</h3><ul><li>Chinese lantern zen garden</li><li>Woodshop showcase and backyard games</li><li>Classic car show</li><li>Approved student car show</li><li>OBPD and OBFD collaboration</li><li>Food trucks</li><li>Tesla synchronized light show</li></ul></div>
+      <div><h3>Hospitality</h3><ul><li>Passed hors d’oeuvres by Culinary</li><li>Cosmetology haircuts by appointment</li><li>Runway hair and makeup support</li><li>Photo booths and photo “experiences”</li><li>Juice bar<span class="tag">Exploring</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="map">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Site plan</div>
+      <h2>A map of the night</h2>
+      <p class="lede" style="color:var(--mute)">Select any area on the plan, or in the list below, to see what happens there.</p>
+    </div>
+    <div class="map-shell">
+      <div>
+        <div class="map-frame">
+          <svg id="plan" viewBox="90 40 860 800" role="group" aria-label="Illustrated site plan of the OBHS Spring Gala">
+            <defs>
+              <filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <radialGradient id="beam" cx="85%" cy="85%" r="90%"><stop offset="0" stop-color="#F3C977" stop-opacity=".7"/><stop offset="1" stop-color="#F3C977" stop-opacity="0"/></radialGradient>
+              <radialGradient id="roomglow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#D4B26A" stop-opacity=".18"/><stop offset="1" stop-color="#D4B26A" stop-opacity="0"/></radialGradient>
+              <pattern id="grass" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r=".6" fill="#7E9E77" opacity=".7"/></pattern>
+            </defs>
+            <rect class="m-ground" x="90" y="40" width="860" height="800"/>
+            <!-- stars -->
+            <g fill="#EFE9DD" opacity=".35"><circle cx="140" cy="90" r="1"/><circle cx="230" cy="70" r=".8"/><circle cx="905" cy="120" r="1"/><circle cx="880" cy="640" r=".8"/><circle cx="930" cy="560" r="1.1"/><circle cx="170" cy="180" r=".7"/><circle cx="820" cy="760" r=".9"/></g>
+            <!-- roads -->
+            <path class="m-road" d="M90,472 L120,472 C175,472 150,300 240,300 C330,300 420,360 455,430 C480,500 470,555 560,557 L740,557 C820,557 860,470 875,380 C890,250 880,110 800,80 C760,65 742,45 742,40"/>
+            <path class="m-road" d="M950,345 L732,820"/>
+            <path class="m-road" d="M108,523 L134,523 Q140,523 140,530 L140,818 Q140,825 133,825 L112,825"/>
+            <path class="m-lot" d="M395,612 L530,630 L760,630 L725,820 L395,822 Z"/>
+            <text class="m-label sm" x="560" y="735" text-anchor="middle">Parking lot</text>
+
+            <!-- building -->
+            <g>
+              <rect class="m-wall" x="344" y="80" width="364" height="30"/>
+              <path class="m-wall" d="M322,100 H370 V148 H839 V176 H660 V330 L705,327 L676,352 L672,356 L628,325 H452 V350 A95,95 0 0 1 370,270 H392 V176 H322 Z" style="fill:#1A1822"/>
+              <path class="m-wall" d="M418,178 H550 V300 H452 L418,270 Z"/>
+              <rect class="m-wall" x="550" y="178" width="38" height="122"/>
+              <path class="m-wall" d="M588,178 H635 V242 L600,265 H588 Z"/>
+              <rect class="m-wall" x="660" y="176" width="179" height="154"/>
+              <path class="m-wall thin" d="M727,176 V330 M660,245 H727 M660,262 H727"/>
+              <rect class="m-wall" x="452" y="325" width="126" height="35"/>
+              <path class="m-wall thin" d="M506,325 V360"/>
+              <path class="m-wall" d="M578,325 H628 L672,356 V445 L655,462 V535 H520 V428 H580 V360 L578,325 Z"/>
+              <circle cx="757" cy="395" r="118" fill="url(#roomglow)"/>
+              <circle class="m-wall" cx="757" cy="395" r="92"/>
+              <circle cx="757" cy="395" r="86" fill="none" stroke="#6B6575" stroke-width=".7"/>
+              <!-- courtyards -->
+              <rect class="m-court" x="372" y="111" width="203" height="35"/>
+              <rect x="372" y="111" width="203" height="35" fill="url(#grass)"/>
+              <rect class="m-court" x="606" y="111" width="184" height="35"/>
+              <rect x="606" y="111" width="184" height="35" fill="url(#grass)"/>
+              <rect x="700" y="124" width="90" height="11" fill="#EFE9DD" opacity=".12"/>
+              <path class="m-path" d="M612,129 Q650,118 696,129"/>
+            </g>
+
+            <!-- arrows -->
+            <path class="m-arrow" d="M405,288 V262 M400,268 L405,262 L410,268"/>
+            <path class="m-arrow" d="M436,312 H460 M454,307 L460,312 L454,317"/>
+            <path class="m-arrow" d="M408,166 C408,156 400,158 390,160 M395,155 L390,160 L395,165"/>
+            <path class="m-arrow" d="M412,166 C412,156 420,158 428,160 M423,155 L428,160 L423,165"/>
+            <path class="m-arrow" d="M587,146 C587,132 580,128 568,128 M573,123 L568,128 L573,133"/>
+            <path class="m-arrow" d="M598,146 C598,132 604,128 616,128 M611,123 L616,128 L611,133"/>
+            <path class="m-arrow" d="M634,164 C646,164 648,170 648,182 M643,177 L648,182 L653,177"/>
+
+            <!-- ZONES (each a selectable group) -->
+            <g class="zone" data-z="jazzw" tabindex="0" role="button"><rect class="hit" x="322" y="100" width="48" height="48"/><text class="m-label" x="346" y="128" text-anchor="middle">Live</text><text class="m-label" x="346" y="139" text-anchor="middle">Jazz</text></g>
+            <g class="zone" data-z="wood" tabindex="0" role="button"><rect class="hit" x="372" y="111" width="203" height="35"/><rect class="crate" x="392" y="120" width="9" height="9" rx="1.5" transform="rotate(8 396 124)"/><rect class="crate" x="410" y="132" width="9" height="9" rx="1.5" transform="rotate(-6 414 136)"/><rect class="crate" x="530" y="119" width="9" height="9" rx="1.5" transform="rotate(12 534 123)"/><rect class="crate" x="548" y="131" width="9" height="9" rx="1.5" transform="rotate(-4 552 135)"/><text class="m-label" x="473" y="126" text-anchor="middle">Woodshop +</text><text class="m-label" x="473" y="137" text-anchor="middle">Backyard games</text></g>
+            <g class="zone" data-z="zen" tabindex="0" role="button"><rect class="hit" x="606" y="111" width="92" height="35"/><circle class="lantern" cx="616" cy="123" r="3.4"/><circle class="lantern" cx="625" cy="135" r="3.4"/><circle class="lantern" cx="634" cy="123" r="3.4"/><circle class="lantern" cx="643" cy="135" r="3.4"/><circle class="lantern" cx="652" cy="123" r="3.4"/><circle class="lantern" cx="661" cy="135" r="3.4"/><circle class="lantern" cx="670" cy="123" r="3.4"/><circle class="lantern" cx="679" cy="135" r="3.4"/><circle class="lantern" cx="688" cy="123" r="3.4"/><text class="m-label" x="652" y="108" text-anchor="middle">Lantern zen garden</text></g>
+            <g class="zone" data-z="jazze" tabindex="0" role="button"><rect class="hit" x="700" y="111" width="90" height="35"/><g transform="translate(745 129)"><circle r="6" fill="none" stroke="#D4B26A" stroke-width="1"/><path d="M-2,3 V-4 L4,-5 V2" stroke="#D4B26A" fill="none" stroke-width="1"/></g><text class="m-label" x="745" y="108" text-anchor="middle">Live jazz</text></g>
+            <g class="zone" data-z="art" tabindex="0" role="button"><path class="hit" d="M392,176 H418 V270 H392 Z M418,148 H520 V176 H418 Z"/><text class="m-label" x="405" y="222" text-anchor="middle" transform="rotate(-90 405 222)">Art</text><text class="m-label" x="448" y="166">Art</text></g>
+            <g class="zone" data-z="arch" tabindex="0" role="button"><rect class="hit" x="520" y="148" width="319" height="28"/><text class="m-label" x="660" y="166" text-anchor="middle">Architecture</text></g>
+            <g class="zone" data-z="media" tabindex="0" role="button"><path class="hit" d="M418,178 H550 V300 H452 L418,270 Z"/><text class="m-label" x="484" y="228" text-anchor="middle">Media center</text><text class="m-label sm" x="484" y="241" text-anchor="middle">Short films</text><text class="m-label sm" x="484" y="252" text-anchor="middle">Esports?</text></g>
+            <g class="zone" data-z="cd" tabindex="0" role="button"><path class="hit" d="M588,178 H635 V242 L600,265 H588 Z"/><text class="m-label" x="611" y="205" text-anchor="middle">Creative</text><text class="m-label" x="611" y="216" text-anchor="middle">Design</text><text class="m-label sm" x="604" y="250" text-anchor="middle">Merch</text></g>
+            <g class="zone" data-z="entry" tabindex="0" role="button"><path class="hit" d="M370,270 H452 V350 A95,95 0 0 1 370,270 Z"/><text class="m-label" x="414" y="338" text-anchor="middle" style="font-size:10px;font-weight:500;paint-order:stroke;stroke:#1A1822;stroke-width:4px;stroke-linejoin:round">Entrance</text></g>
+            <g class="zone" data-z="photo" tabindex="0" role="button"><rect class="hit" x="452" y="300" width="148" height="25"/><text class="m-label" x="525" y="316" text-anchor="middle">Photography</text></g>
+            <g class="zone" data-z="ceram" tabindex="0" role="button"><path class="hit" d="M600,300 H630 L690,336 L680,350 L626,325 H600 Z"/><text class="m-label sm" x="614" y="316" text-anchor="middle">Ceramics</text></g>
+            <g class="zone" data-z="culinary" tabindex="0" role="button"><path class="hit" d="M578,325 H628 L672,356 V445 L655,462 V535 H520 V428 H580 V360 Z"/><text class="m-label" x="620" y="375" text-anchor="middle">Culinary /</text><text class="m-label" x="620" y="386" text-anchor="middle">Food services</text></g>
+            <g class="zone" data-z="press" tabindex="0" role="button"><rect class="hit" x="660" y="262" width="67" height="68"/><text class="m-label" x="692" y="286" text-anchor="middle">Media</text><text class="m-label" x="692" y="297" text-anchor="middle">Relations</text></g>
+            <g class="zone" data-z="runway" tabindex="0" role="button">
+              <circle class="hit" cx="757" cy="395" r="92"/>
+              <path class="beam" d="M800,452 L700,380 L745,345 Z"/>
+              <circle class="seat" cx="695.6" cy="415.7" r="1.6"/><circle class="seat" cx="701.6" cy="412.0" r="1.6"/><circle class="seat" cx="707.5" cy="408.2" r="1.6"/><circle class="seat" cx="713.4" cy="404.5" r="1.6"/><circle class="seat" cx="719.4" cy="400.8" r="1.6"/><circle class="seat" cx="725.3" cy="397.1" r="1.6"/><circle class="seat" cx="731.2" cy="393.4" r="1.6"/><circle class="seat" cx="737.2" cy="389.7" r="1.6"/><circle class="seat" cx="743.1" cy="386.0" r="1.6"/><circle class="seat" cx="749.1" cy="382.3" r="1.6"/><circle class="seat" cx="755.0" cy="378.6" r="1.6"/><circle class="seat" cx="760.9" cy="374.9" r="1.6"/><circle class="seat" cx="766.9" cy="371.2" r="1.6"/><circle class="seat" cx="772.8" cy="367.4" r="1.6"/><circle class="seat" cx="778.7" cy="363.7" r="1.6"/><circle class="seat" cx="784.7" cy="360.0" r="1.6"/><circle class="seat" cx="790.6" cy="356.3" r="1.6"/><circle class="seat" cx="796.5" cy="352.6" r="1.6"/><circle class="seat" cx="802.5" cy="348.9" r="1.6"/><circle class="seat" cx="711.5" cy="441.1" r="1.6"/><circle class="seat" cx="717.5" cy="437.4" r="1.6"/><circle class="seat" cx="723.4" cy="433.7" r="1.6"/><circle class="seat" cx="729.3" cy="430.0" r="1.6"/><circle class="seat" cx="735.3" cy="426.3" r="1.6"/><circle class="seat" cx="741.2" cy="422.6" r="1.6"/><circle class="seat" cx="747.1" cy="418.8" r="1.6"/><circle class="seat" cx="753.1" cy="415.1" r="1.6"/><circle class="seat" cx="759.0" cy="411.4" r="1.6"/><circle class="seat" cx="764.9" cy="407.7" r="1.6"/><circle class="seat" cx="770.9" cy="404.0" r="1.6"/><circle class="seat" cx="776.8" cy="400.3" r="1.6"/><circle class="seat" cx="782.8" cy="396.6" r="1.6"/><circle class="seat" cx="788.7" cy="392.9" r="1.6"/><circle class="seat" cx="794.6" cy="389.2" r="1.6"/><circle class="seat" cx="800.6" cy="385.5" r="1.6"/><circle class="seat" cx="806.5" cy="381.8" r="1.6"/><circle class="seat" cx="812.4" cy="378.0" r="1.6"/><circle class="seat" cx="818.4" cy="374.3" r="1.6"/>
+              <rect class="runway-bar" x="692" y="390" width="130" height="10" transform="rotate(-32 757 395)"/>
+              <rect class="dj" x="800" y="438" width="9" height="24" transform="rotate(32 804 450)"/>
+              <text class="m-label big" x="757" y="338" text-anchor="middle">Project Runway</text>
+                            <text class="m-label sm" x="814" y="433" text-anchor="middle">DJ</text>
+            </g>
+            <g class="zone" data-z="barber" tabindex="0" role="button"><rect class="hit" x="671" y="376" width="62" height="30" rx="4"/><g fill="#EFE9DD"><rect x="676" y="380" width="8" height="8" rx="2"/><rect x="676" y="392" width="8" height="8" rx="2"/><rect x="673" y="381" width="2" height="6" rx="1"/><rect x="673" y="393" width="2" height="6" rx="1"/></g><text class="m-label sm" x="689" y="394">Barber</text></g>
+            <g class="zone" data-z="collect" tabindex="0" role="button"><path class="hit" d="M200,410 L268,340 L360,380 L400,460 L340,525 L260,505 Z"/><g transform="translate(213.0 410.0) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(223.6 398.4) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(234.2 386.8) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(244.8 375.2) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(255.4 363.6) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(266.0 352.0) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(262.0 494.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(270.0 478.8) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(278.0 463.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(286.0 448.2) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(294.0 433.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(302.0 417.8) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(310.0 402.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(318.0 387.2) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(326.0 372.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(296.0 476.0) rotate(58)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(305.0 462.3) rotate(58)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(314.0 448.7) rotate(58)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(323.0 435.0) rotate(58)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(332.0 421.3) rotate(58)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(341.0 407.7) rotate(58)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(350.0 394.0) rotate(58)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(338.0 515.0) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(348.8 503.2) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(359.6 491.4) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(370.4 479.6) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(381.2 467.8) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(392.0 456.0) rotate(42)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><text class="m-label" x="196" y="462">Collectors</text><text class="m-label" x="196" y="473">car show</text></g>
+            <g class="zone" data-z="obpd" tabindex="0" role="button"><rect class="hit" x="330" y="270" width="40" height="40"/><rect class="hit" x="425" y="360" width="60" height="50"/><g transform="translate(350 292) rotate(8)"><rect class="police" x="-7" y="-12" width="14" height="24" rx="3"/><circle class="bluelight" cx="-3" cy="-2" r="1.8"/><circle class="redlight" cx="3" cy="-2" r="1.8"/></g><g transform="translate(447 376) rotate(90)"><rect class="police" x="-7" y="-12" width="14" height="24" rx="3"/><circle class="bluelight" cx="-3" cy="-2" r="1.8"/><circle class="redlight" cx="3" cy="-2" r="1.8"/></g><text class="m-label" x="455" y="400" text-anchor="middle">OBPD</text></g>
+            <g class="zone" data-z="student" tabindex="0" role="button"><rect class="hit" x="150" y="528" width="236" height="160"/><g transform="translate(165.0 542.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(166.0 559.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(167.0 577.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(168.0 594.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(169.0 612.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(220.0 556.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(221.0 574.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(222.0 592.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(223.0 610.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(224.0 628.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(244.0 566.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(245.0 584.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(246.0 603.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(247.0 621.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(248.0 640.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(300.0 578.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(301.0 596.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(302.0 614.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(303.0 632.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(304.0 650.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(324.0 590.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(325.0 606.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(326.0 623.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(327.0 639.5) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(328.0 656.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(370.0 604.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(371.0 622.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(372.0 640.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(373.0 658.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(374.0 676.0) rotate(62)"><rect class="car" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><text class="m-label" x="262" y="532" text-anchor="middle">Student car show</text></g>
+            <g class="zone" data-z="trucks" tabindex="0" role="button"><rect class="hit" x="146" y="618" width="26" height="118"/><g transform="translate(157 640)"><rect class="truck" x="-8" y="-17" width="16" height="34" rx="3"/><rect class="glass" x="-6" y="-15" width="12" height="5" rx="1"/></g><g transform="translate(157 677)"><rect class="truck" x="-8" y="-17" width="16" height="34" rx="3"/><rect class="glass" x="-6" y="-15" width="12" height="5" rx="1"/></g><g transform="translate(157 713)"><rect class="truck" x="-8" y="-17" width="16" height="34" rx="3"/><rect class="glass" x="-6" y="-15" width="12" height="5" rx="1"/></g><text class="m-label" x="178" y="680">Food</text><text class="m-label" x="178" y="691">trucks</text></g>
+            <g class="zone" data-z="tesla" tabindex="0" role="button"><rect class="hit" x="203" y="694" width="128" height="28"/><g transform="translate(215.0 708.0) rotate(0)"><rect class="car tesla" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(236.0 708.0) rotate(0)"><rect class="car tesla" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(256.0 708.0) rotate(0)"><rect class="car tesla" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(277.0 708.0) rotate(0)"><rect class="car tesla" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(297.0 708.0) rotate(0)"><rect class="car tesla" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><g transform="translate(318.0 708.0) rotate(0)"><rect class="car tesla" x="-4.5" y="-8.5" width="9" height="17" rx="3.2"/><rect class="glass" x="-2.9" y="-5.3" width="5.8" height="3.4" rx="1"/></g><text class="m-label" x="267" y="734" text-anchor="middle">Tesla light show</text></g>
+            <g class="zone" data-z="obfd" tabindex="0" role="button"><rect class="hit" x="180" y="740" width="180" height="62"/><g transform="translate(210 770) rotate(-50)"><rect class="ladder" x="-11" y="-32" width="22" height="64" rx="3"/><path class="rungs" d="M-5,-14 V26 M5,-14 V26 M-5,-8 H5 M-5,-1 H5 M-5,6 H5 M-5,13 H5 M-5,20 H5"/></g><g transform="translate(326 772) rotate(62)"><rect class="ladder" x="-11" y="-32" width="22" height="64" rx="3"/><path class="rungs" d="M-5,-14 V26 M5,-14 V26 M-5,-8 H5 M-5,-1 H5 M-5,6 H5 M-5,13 H5 M-5,20 H5"/></g><text class="m-label" x="268" y="814" text-anchor="middle">OBFD ladder trucks</text></g>
+
+            <!-- compass -->
+            <g transform="translate(905 790)" aria-hidden="true"><circle r="18" fill="none" stroke="#34303D"/><path d="M0,-14 L4,0 L0,14 L-4,0 Z" fill="#D4B26A" opacity=".85"/><text class="m-label sm" x="0" y="-22" text-anchor="middle">N</text></g>
+          </svg>
+        </div>
+        <p class="hint">Illustrated plan, not to scale · scroll sideways on a phone</p>
+      </div>
+      <aside class="panel" aria-live="polite">
+        <span class="where" id="pWhere">The centerpiece</span>
+        <h3 id="pTitle">Project Runway</h3>
+        <p id="pBody">The round room hosts the fashion show on a diagonal runway, with a DJ booth at the edge and projection mapping after dark.</p>
+      </aside>
+    </div>
+    <div class="legend">
+      <div><h3>Inside</h3><ul id="legIn"></ul></div>
+      <div><h3>Outside</h3><ul id="legOut"></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="involved">
+  <div class="wrap inv">
+    <div>
+      <div class="head">
+        <div class="eyebrow">For OBHS teachers</div>
+        <h2>Here’s where you come in</h2>
+        <p class="lede" style="color:var(--mute)">With the groundwork laid, we’re working with teachers to plan exhibits for the night.</p>
+      </div>
+      <div class="offer">
+        <div class="eyebrow">From Creative Design</div>
+        <h3>We’ll photograph and print your students’ work</h3>
+        <p>Creative Design can photograph your students’ artwork and print it large-format for the Gala art show. Whenever a piece stands out this year, have us shoot it right away. We’ll keep it on file, ready to scale up to any size in the spring.</p>
+      </div>
+      <div class="qs">
+        <div><h4>What you’ll show</h4><ol>
+          <li>Which classes or levels would you like represented, and roughly how many pieces from each?</li>
+          <li>What media and formats? 2D framed or unframed, 3D or sculpture, ceramics, digital or projected work, or something installation-scale.</li>
+          <li>Do you have standout students whose work could be a featured portfolio or a “spotlight artist” display?</li>
+          <li>Is there a single class project or theme that could become a cohesive wall or installation?</li>
+        </ol></div>
+        <div><h4>Size &amp; display</h4><ol start="5">
+          <li>What are the largest and smallest dimensions we should plan for?</li>
+          <li>What does each piece need? Walls or easels, pedestals for 3D work, a screen or projector, lighting, or vertical staged cafeteria tables?</li>
+          <li>Are pieces already matted or framed, or will they need mounting? If so, who handles that?</li>
+        </ol></div>
+        <div><h4>A professional show</h4><ol start="8">
+          <li>Would students write a short artist statement or title card for each piece?</li>
+          <li>Could some students stand with their work to talk with guests?</li>
+          <li>Would you like a live element, such as a student working on a piece or a demo?</li>
+          <li>Is any work for sale, or should we treat everything as not-for-sale?</li>
+          <li>Is there a local artist or alum you’d love your students to meet, whom we could invite?</li>
+        </ol></div>
+      </div>
+      <p class="note">Have another idea to make this a very special night? Let us know.</p>
+    </div>
+    <div class="side">
+      <div class="card">
+        <div class="eyebrow">For partners</div>
+        <h3>Local artists, businesses &amp; professionals</h3>
+        <p>We’re building partnerships with local colleges, industry professionals, artists and designers, with outreach through the PTSA and community organizations.</p>
+        <div class="chips"><span>Sponsor</span><span>Exhibit</span><span>Mentor</span><span>Judge</span><span>Demo</span></div>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Tickets</div>
+        <h3>Advance sales, under consideration</h3>
+        <p>Advance tickets would help plan for the crowd and could raise funds for senior scholarships.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Save the date</div>
+        <h3>Date to be announced</h3>
+        <p>We’re looking at an April or May evening, plus a rain date. If you have an “absolutely not” date, let us know.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="planning">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Still in planning</div>
+      <h2>What we’re working out next</h2>
+    </div>
+    <div class="open">
+      <div><b>The date</b><p>A spring evening that maximizes attendance and weather, timed for dusk.</p></div>
+      <div><b>Atmosphere &amp; logistics</b><p>Formal attire, culinary offerings, a juice bar, food trucks and the OBPD and OBFD car show.</p></div>
+      <div><b>Community outreach</b><p>Expanding through the PTSA and other community organizations.</p></div>
+      <div><b>Rooted in Culture</b><p>Bringing in more areas of OBHS and finding where they fit the theme.</p></div>
+      <div><b>Partnerships</b><p>Local colleges, industry professionals, artists and designers.</p></div>
+      <div><b>Media &amp; PR</b><p>A strategy to reach local news outlets and promote the night across the community.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Project contact</div>
+      <h2 style="margin-top:14px">Let’s make it a <em>night to remember</em></h2>
+    </div>
+    <div class="who">
+      <span class="name">Adrian Cline</span>
+      <span>Creative Design 3 Seniors</span>
+      <span class="mute">Period 1B · Room 345</span>
+      <a href="mailto:ACline@obps.org" style="font-family:var(--mono);font-size:15px;letter-spacing:.04em;user-select:all;margin-top:6px">ACline@obps.org</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>OBHS Spring Gala · Art, Design &amp; Technology</span><span>Produced by the students of OBHS Creative Design</span></div></footer>
+
+<script>
+(function(){
+  var Z={
+    entry:{w:"Inside",t:"Main entrance",b:"Guests arrive through the curved lobby. Still open: how to dress the entrance, possibly with a projection-mapped wall.",s:""},
+    art:{w:"Inside",t:"Formal art show",b:"The west and north corridors become a gallery of student artwork, with selected pieces for sale.",s:""},
+    photo:{w:"Inside",t:"Photography",b:"Photography exhibits line the corridor from the entrance toward the round room.",s:""},
+    arch:{w:"Inside",t:"Architecture",b:"The architecture exhibit runs along the north corridor between the two courtyards.",s:""},
+    media:{w:"Inside",t:"Media center",b:"Short film screenings, with an esports display under consideration.",s:""},
+    cd:{w:"Inside",t:"Creative Design & merch",b:"The Creative Design studio, home of the student production team, with Gala and school merch for sale.",s:""},
+    barber:{w:"Inside",t:"Barber shop",b:"Barber chairs set along the edge of the round room. Cosmetology students offer haircuts by appointment and support the runway with hair and makeup.",s:""},
+    press:{w:"Inside",t:"Media relations",b:"Media hub for student and professional interviews, press, and Q&A.",s:""},
+    ceram:{w:"Inside",t:"Ceramics",b:"Ceramics work displayed along the path into the round room.",s:""},
+    culinary:{w:"Inside",t:"Culinary / food services",b:"Culinary students prepare the passed hors d’oeuvres. A juice bar is being explored.",s:""},
+    runway:{w:"The centerpiece",t:"Project Runway",b:"The round room hosts the fashion show on a diagonal runway, with a DJ booth at the edge and projection mapping after dark.",s:"r"},
+    wood:{w:"Courtyard",t:"Woodshop + backyard games",b:"The west courtyard shows woodshop builds that guests can play with, from backyard games to furniture.",s:"g"},
+    zen:{w:"Courtyard",t:"Chinese lantern zen garden",b:"A quiet garden lit by lanterns in the east courtyard.",s:"l"},
+    jazze:{w:"Courtyard",t:"Live jazz, garden",b:"Live jazz in the east courtyard beside the zen garden.",s:"l"},
+    jazzw:{w:"Inside",t:"Live jazz, west wing",b:"A second jazz set at the west end of the building.",s:""},
+    collect:{w:"Outside",t:"Collectors car show",b:"Classic and collector cars on the front lawn, the first thing guests see on arrival.",s:""},
+    obpd:{w:"Outside",t:"OBPD vehicles",b:"Old Bridge Police Department vehicles near the entrance, part of the car show collaboration.",s:"b"},
+    student:{w:"Outside",t:"Approved student car show",b:"Student cars, approved in advance, shown in the front lot.",s:""},
+    trucks:{w:"Outside",t:"Food trucks",b:"A row of food trucks along the west edge of the lot.",s:""},
+    tesla:{w:"After dark",t:"Tesla synchronized light show",b:"A row of Teslas runs a choreographed light show once it’s dark.",s:""},
+    obfd:{w:"Outside",t:"OBFD ladder trucks",b:"Old Bridge Fire Department ladder trucks frame the south end of the lot.",s:"r"}
+  };
+  var inside=["entry","art","photo","arch","media","cd","press","ceram","culinary","runway","barber","wood","zen","jazze","jazzw"];
+  var outside=["collect","obpd","student","trucks","tesla","obfd"];
+  var zones=document.querySelectorAll('#plan .zone');
+  var pW=document.getElementById('pWhere'),pT=document.getElementById('pTitle'),pB=document.getElementById('pBody');
+  function pick(k){
+    var z=Z[k]; if(!z) return;
+    pW.textContent=z.w; pT.textContent=z.t; pB.textContent=z.b;
+    zones.forEach(function(g){g.classList.toggle('on',g.dataset.z===k);});
+    document.querySelectorAll('.legend button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.z===k?'true':'false');});
+  }
+  zones.forEach(function(g){
+    var z=Z[g.dataset.z]; if(z) g.setAttribute('aria-label',z.t);
+    g.addEventListener('click',function(){pick(g.dataset.z);});
+    g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(g.dataset.z);}});
+  });
+  function fill(id,list){
+    var ul=document.getElementById(id);
+    list.forEach(function(k){
+      var li=document.createElement('li'),b=document.createElement('button');
+      b.type='button';b.dataset.z=k;b.setAttribute('aria-pressed','false');
+      var s=document.createElement('span');s.className='sw '+(Z[k].s||'');
+      b.appendChild(s);b.appendChild(document.createTextNode(Z[k].t));
+      b.addEventListener('click',function(){pick(k);});
+      li.appendChild(b);ul.appendChild(li);
+    });
+  }
+  fill('legIn',inside);fill('legOut',outside);
+  pick('runway');
+})();
+</script>
+
+</body>
+</html>
